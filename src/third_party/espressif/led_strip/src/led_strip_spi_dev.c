@@ -112,7 +112,7 @@ static esp_err_t spi_led_strip_refresh_wait_done(led_strip_t *strip)
 {
     led_strip_spi_obj *spi_strip = __containerof(strip, led_strip_spi_obj, base);
     spi_transaction_t* tx_conf = 0;
-    spi_device_get_trans_result(spi_strip->spi_device, &tx_conf, portMAX_DELAY);
+    // spi_device_get_trans_result(spi_strip->spi_device, &tx_conf, portMAX_DELAY);
     return ESP_OK;
 }
 
