@@ -303,7 +303,7 @@ public:
         return ptr_ != nullptr;
     }
 
-private:
+// private:
 
     // Constructor from raw pointer with default deleter
     template<typename Y>
